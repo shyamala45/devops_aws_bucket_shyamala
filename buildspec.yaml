@@ -8,3 +8,7 @@ phases:
     commands:
     - ./terraform init
     - ./terraform apply --auto-approve
+artifacts:
+  name: TerraformPlan
+  files:
+  - "*state*"
